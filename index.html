@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook - Clone by Gia Phat</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="assets/images/logo.png" class="logo">
+            </a>
+            <ul>
+                <li><img src="assets/images/notification.png"></li>
+                <li><img src="assets/images/inbox.png"></li>
+                <li><img src="assets/images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="assets/images/search.png">
+                <input type="text" placeholder="Search"> 
+            </div>
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="assets/images/profile-pic.png">
+            </div>
+        </div>
+
+        <div class="settings-menu">
+
+            <div id="dark-btn" >
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="assets/images/profile-pic.png">
+                    <div>
+                        <p>Driss Chan</p>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="assets/images/feedback.png">
+                    <div>
+                        <p>Give Feedbacks</p>
+                        <a href="#">Help us to improve the new Design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="assets/images/setting.png" class="setting-icon">
+                    <a href="#">Settings & Privacy <img src="assets/images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="assets/images/help.png" class="setting-icon">
+                    <a href="#">Help & Support <img src="assets/images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="assets/images/display.png" class="setting-icon">
+                    <a href="#">Display & Accessibility <img src="assets/images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="assets/images/logout.png" class="setting-icon">
+                    <a href="#">Log Out <img src="assets/images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!-- Left side bar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="assets/images/news.png">Latest News</a>
+                <a href="#"><img src="assets/images/friends.png">Friends</a>
+                <a href="#"><img src="assets/images/group.png">Group</a>
+                <a href="#"><img src="assets/images/marketplace.png">Marketplace</a>
+                <a href="#"><img src="assets/images/watch.png">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="assets/images/shortcut-1.png">Web Developers</a>
+                <a href="#"><img src="assets/images/shortcut-2.png">Web Designers</a>
+                <a href="#"><img src="assets/images/shortcut-3.png">Full Stack Developers</a>
+                <a href="#"><img src="assets/images/shortcut-4.png">Website Experts</a>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="assets/images/upload.png">
+                    <p>Post Story</p>
+                </div>
+
+                <div class="story story2">
+                    <img src="assets/images/member-1.png">
+                    <p>Andrew Sage</p>
+                </div>
+
+                <div class="story story3">
+                    <img src="assets/images/member-2.png">
+                    <p>Anthony Sova</p>
+                </div>
+
+                <div class="story story4">
+                    <img src="assets/images/member-3.png">
+                    <p>Kyle Omen</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="assets/images/member-4.png">
+                    <p>Lee SinKayo</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="assets/images/profile-pic.png">
+                    <div>
+                        <p>Driss Chan</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea  rows="3" placeholder="What's on your mind, Driss ?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="assets/images/live-video.png">Live Video</a>
+                        <a href="#"><img src="assets/images/photo.png">Photo/Video</a>
+                        <a href="#"><img src="assets/images/feeling.png">Feeling Activities</a>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="assets/images/profile-pic.png">
+                        <div>
+                            <p>Driss Chan</p>
+                            <span>July 24 2021, 14:30 p.m</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Subscribe <span>@JPhat2407</span> channel to learn more about the basketball techniques and methods, 
+                    how to play basketball like a pro. <a href="#">#JPhat2407</a> <a href="#">#YoutubeChannel</a></p>
+                    <img src="assets/images/feed-image-1.png" class="post-img">
+                    
+                    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="assets/images/like-blue.png">25.24k</div>
+                            <div><img src="assets/images/comments.png">10.2k</div>
+                            <div><img src="assets/images/share.png">3.5k</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="assets/images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="assets/images/member-3.png">
+                        <div>
+                            <p>Kyle Omen</p>
+                            <span>October 4 2021, 15:30 p.m</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Follow <span>@OKyle245</span> to watch my daily blog, and see how to escape pressure and 
+                    stress. Chilling with us right now.<a href="#">#BeachWithMyFriends</a> <a href="#">#AfternoonChill</a></p>
+                    <img src="assets/images/feed-image-2.png" class="post-img">
+                    
+                    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="assets/images/like-blue.png">8.24k</div>
+                            <div><img src="assets/images/comments.png">2.2k</div>
+                            <div><img src="assets/images/share.png">1k</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="assets/images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="assets/images/member-4.png">
+                        <div>
+                            <p>Lee SinKayo</p>
+                            <span>October 10 2021, 13:30 p.m</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Follow <span>@Kayo90</span> We are walking past, through a lot of streets, talk about 
+                    our life, our hobbies, our jobs and so on. If you want to join with us, please contact our group we can 
+                    become friend. Nice to see you. <a href="#">#MakeFriends</a> <a href="#">#Relaxation</a></p>
+                    <img src="assets/images/feed-image-3.png" class="post-img">
+                    
+                    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="assets/images/like.png">10.24k</div>
+                            <div><img src="assets/images/comments.png">2.2k</div>
+                            <div><img src="assets/images/share.png">1.3k</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="assets/images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="assets/images/member-5.png">
+                        <div>
+                            <p>Phoenix Jett</p>
+                            <span>October 12 2021, 15:15 p.m</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Follow my <span>@JaneHanderson148</span> teacher to learn about the programming, how to create a website, 
+                    data stucture and alrgorithm, Operation System, Front-end, Back-end, FullStack and so on. She has a lot of courses about the IT
+                    on the Udemy and Coursea. If you want to become a good Dev, let contact us by mail or inbox directly. 
+                    Thanks so much<a href="#">#ProggramingTutorial</a> <a href="#">#BecomeNiceDevs</a></p>
+                    <img src="assets/images/feed-image-4.png" class="post-img">
+                    
+                    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="assets/images/like-blue.png">17.24k</div>
+                            <div><img src="assets/images/comments.png">5.2k</div>
+                            <div><img src="assets/images/share.png">2.1k</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="assets/images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="assets/images/member-6.png">
+                        <div>
+                            <p>Viper Andy</p>
+                            <span>October 19 2021, 16:30 p.m</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Follow <span>@AnViper142</span> We have a team which are about self-motivative. If you feel
+                    stressful or under pressure, please join with us . We will help you . If you want to have someone who can talk with
+                    you when you are sad or not happy, let come with us. Please contact us by phone or mail. You can come directly our building.\
+                    <a href="#">#Self-HelpTeam</a> <a href="#">#ComeOverStress</a></p>
+                    <img src="assets/images/feed-image-5.png" class="post-img">
+                    
+                    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="assets/images/like-blue.png">9.54k</div>
+                            <div><img src="assets/images/comments.png">1.2k</div>
+                            <div><img src="assets/images/share.png">1k</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="assets/images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+
+        <!-- Right side bar -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>December</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p> <i class="fas fa-map-marker-alt"></i>  Willsons Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>24</h3>
+                    <span>December</span>
+                </div>
+                <div class="right-event">
+                    <h4>Web Development</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Pasal Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="assets/images/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="assets/images/member-1.png">
+                </div>
+                <p>Andrew Sage</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="assets/images/member-2.png">
+                </div>
+                <p>Anthony Sova</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="assets/images/member-3.png">
+                </div>
+                <p>Kyle Omen</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="assets/images/member-4.png">
+                </div>
+                <p>Lee SinKayo</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="assets/images/member-5.png">
+                </div>
+                <p>Phoenix Jett</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="assets/images/member-6.png">
+                </div>
+                <p>Viper Andy</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="assets/images/member-7.png">
+                </div>
+                <p>Pasal John</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="assets/images/member-8.png">
+                </div>
+                <p>Chamber Max</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="assets/images/member-9.png">
+                </div>
+                <p>Well Raze</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2021 - Gia Phat a.k.a Driss Tran</p>
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/7b78e77d77.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</html>
